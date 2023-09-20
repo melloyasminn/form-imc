@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+
+        function click_calcular() {
+            let peso = document.getElementById("valorPeso").value;
+            let altura = document.getElementById("valorAltura").value;
+            if (peso == "") {
+                alert("Informe o peso");
+            } else if (altura == "") {
+                alert("Informe a altura");
+            } else {
+                let imc = Number(peso) / (Number(altura) * Number(altura));
+                document.getElementById("IMC").value = imc.toFixed(2);
+
+            }
+        }
+
+
+        function click_limpar() {
+            document.getElementById("valorPeso").value = "";
+            document.getElementById("valorAltura").value = "";
+            document.getElementById("IMC").value = "";
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Calcular IMC</h1>
+    <br>
+
+      
+<main>
+        <div></div>
+        <div>
+       
+            <form><br>
+                <div>
+                    <label for="valorPeso">Seu peso:</label>
+                    <input type="number" name="" id="valorPeso">
+                </div>
+                <div>
+                    <label for="valorAltura">Sua altura:</label>
+                    <input type="number" name="" id="valorAltura">
+                </div>
+                <div>
+                    <label for="IMC">IMC: </label>
+                    <input type="number" name="" id="IMC" disabled>
+                </div>
+                <div>
+                    <input type="button" value="Calcular" onclick="click_calcular();">
+
+                    <input type="button" value="Limpar" onclick="click_limpar();">
+                </div><br>
+            </form></div> <div></div>
+</main>
+</body>
+
+</html>

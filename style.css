@@ -1,0 +1,40 @@
+
+h1{
+    text-align: center;
+    background-color: rgb(238, 133, 224);
+    font-size: 55px;
+    color: white;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(255, 225, 251);
+}
+
+input{
+    border-radius: 5px;
+    background: rgb(252, 221, 248);
+    border: white;
+    color:rgb(245, 110, 227);
+    
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   font-size: 18px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+}
+
+
+form{
+    background-color: rgb(250, 170, 239);
+    border-radius: 9px;
+   text-align: center;
+}
+
